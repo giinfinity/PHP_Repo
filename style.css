@@ -1,0 +1,107 @@
+*{
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: 20px;
+}
+
+/*Horizontale Linie blau hinterlegen*/
+hr {
+	border: 1px solid #0071BD;
+}
+
+/*Navigationsmenü*/
+nav {
+	background-color: lightgrey;       /* Hintergrundfarbe für die Navigation */ 
+	border-top: solid #0071BD;    		/* Rahmenlinie oben */
+	border-bottom: solid #0071BD;	
+	height: 100px;	/* Rahmenlinie unten */
+	margin: 0;                        	/* Keinen Außenabstand */ 
+}
+
+nav li{
+	 display: inline;            /* Listenelemente nebeneinander */
+ 	 list-style-type: none;  
+	    						 /* Aufzählungszeichen entfernen */
+}
+
+nav a{
+	color: #0071BD;              /* Schriftfarbe schwarz */ 
+  	text-decoration: none;         /* Unterstreichung entfernen */ 
+  	padding: 4px 8px;              /* oben/unten 4px, re/li 8px */
+}
+
+
+/* Tabelle formatieren */
+/*---------------------*/
+/* Größe der Tabelle */
+table {
+	width:80%;	
+}
+
+/* Tabellenrahmen*/
+table, th, td {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+
+/* Hintergrund der Kopfzeile der Tabelle*/
+th {
+	background-color:lightgrey;
+	text-align:left;
+}
+
+/*td:last-child{
+    color: red;
+}*/
+
+.Logo {
+    float: right;
+	height: 50px;
+	width: 170px;
+}
+   
+/* Erste und 3te Zelle/Spalte rechtsbündig - Klasse in table-tag integrieren*/
+#tblZutrittsversuche  td:nth-child(1), 
+#tblZutrittsversuche  td:nth-child(3) {
+	text-align:right;	
+}
+
+/* Layout formatieren */
+/*---------------------*/
+/*Die folgenden Klasse kann zur Formatierung der Kontakt- und Bankdaten verwendet werden.*/
+.row {
+	display: flex;
+}
+
+.column {
+	padding-left:20px;
+	display: grid; 
+	grid-template-rows: 200px 1fr 100px; 
+	grid-template-columns: 25% 25% 25% 25%; 
+}
+
+.column h3{
+	font-weight: bold;
+    color: #0071BD;
+}
+
+.locked{
+    color: red;
+}
+
+.ok{
+    color: green;
+}
+/*##########################################*/
+/*###########       TODO    ################*/
+/*##########################################*/
+/*1. Alle Überschriften sollen in Farbe #0071BD dargestellt werden */ 
+
+
+/*2. Das Logo soll rechtsbündig dargestellt werden und auf Höhe der Navigations-Links sein. */
+
+
+/*3. Die folgenden Klassen (abgelehnt/gestattet) sind anzulegen und sollen zur Formatierung des Ergebnisses verwendet werden. 
+  abgelehnt ist rot und gestattet grün*/
