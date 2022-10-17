@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <title>AH-Nettmann Formular</title>
 </head>
-
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-dark">
@@ -21,6 +20,9 @@
                 <li>
                     <a href="#" style="text-decoration: underline;">Mietwagen</a>
                 </li>
+                <li>
+                <button name="backBtn" type="button" onclick="history.back();">Zurück</button>
+                </li>
             </ul>
             <img class="Logo" src="Logo Nettmann.png" alt="AH-Nettmann Logo"></img>
         </nav>
@@ -30,13 +32,13 @@
     <?php
 if ($_POST["txtKundennummer"] == '') {
     echo 'Hallo, geh bitte zurück und trag deinen Namen ein!';
-//Btn Zurück
-}
+
+    }
 else {
     echo 'Kundennummer ' . $_POST["txtKundennummer"] . ',';
 }?><br>
 
-    Autoauswahl:
+    <strong>Autoauswahl:</strong>
     <?php
 if (isset($_POST["cb1"]))
     echo "Kleinwagen<br/>";
@@ -47,7 +49,7 @@ if (isset($_POST["cb3"]))
 if (isset($_POST["cb4"]))
     echo "Luxuswagen<br/>"; ?><br>
 
-    Autozubehör:
+    <strong>Autozubehör:</strong>
     <?php
 if (isset($_POST["cb5"]))
     echo "Klimaanlage<br/>";
@@ -56,15 +58,12 @@ if (isset($_POST["cb6"]))
 if (isset($_POST["cb7"]))
     echo "Navigator<br/>"; ?><br>
 
-    <hr>
-
     <?php
 if ($_POST['Senden']) {
     $zzz = $_POST['location'];
-    echo 'Abholort: ' . $zzz;
+    echo '<strong>Abholort:</strong> ' . $zzz;
 }
 ?>
-
     <hr>
     <section class="column">
         <ul>
@@ -80,7 +79,5 @@ if ($_POST['Senden']) {
             <li>Institut: SuperBank</li>
         </ul>
     </section>
-
 </body>
-
 </html>

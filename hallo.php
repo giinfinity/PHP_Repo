@@ -17,6 +17,31 @@
 #var_dump($i);
 ?>
 <p>Grid mit 100 Zahlen</p>
+
+<!--Funktion um Primzahlen zu finden-->
+<?php
+function checkPrim($num)
+{
+  if($num%2==0){
+    return false;
+  }
+  for($i = 3; $i < $num; $i+=2){
+    if($num % $i == 0){
+      return false;
+    }
+  }
+  return true;
+}
+?>
+
+<!--Wurzel Funktion-->
+<?php
+$quadrat = sqrt(100,5);
+$zahlen100 = array();
+?>
+
+
+
 <?php
 echo '<table style="border:1px solid black">';
   $zahlen = array();

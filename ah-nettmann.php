@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <title>AH-Nettmann Formular</title>
 </head>
-
 <body>
 
     <!--entspricht name in Form / HTML-->
@@ -55,10 +54,10 @@
 
         <!--HTML Version-->
         <p>Welche Fahrzeugklasse bevorzugen Sie?</p>
-        <input type="checkbox" name="cb1" value="Kleinwagen">Kleinwagen<br>
-        <input type="checkbox" name="cb2" value="Kompaktwagen">Kompaktwagen<br>
-        <input type="checkbox" name="cb3" value="Familienwagen">Familiennwagen<br>
-        <input type="checkbox" name="cb4" value="Luxuswagen">Luxuswagen<br>
+        <input type="radio" name="cb1" value="Kleinwagen">Kleinwagen<br>
+        <input type="radio" name="cb2" value="Kompaktwagen">Kompaktwagen<br>
+        <input type="radio" name="cb3" value="Familienwagen">Familiennwagen<br>
+        <input type="radio" name="cb4" value="Luxuswagen">Luxuswagen<br>
 
         <p>Welche Zusatzausstattung wünschen Sie?</p>
         <!--PHP Version-->
