@@ -32,7 +32,6 @@
     <?php
 if ($_POST["txtKundennummer"] == '') {
     echo 'Hallo, geh bitte zurück und trag deinen Namen ein!';
-
     }
 else {
     echo 'Kundennummer ' . $_POST["txtKundennummer"] . ',';
